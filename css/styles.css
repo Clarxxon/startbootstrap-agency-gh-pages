@@ -10130,7 +10130,7 @@ header.masthead {
   text-align: center;
   color: #fff;
   background-color: #1d3557;
-  /*background-image: url("../assets/img/header-bg.jpg");*/
+  background-image: url("../assets/blue-gradient-squares-wallpaper-3554x1999-17232_53.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10163,9 +10163,9 @@ header.masthead .masthead-heading {
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    line-height: 4.5rem;
+    line-height: 3.5rem;
     margin-bottom: 4rem;
   }
 }
@@ -10201,6 +10201,10 @@ header.masthead .masthead-heading {
   padding: 1.5rem;
   text-align: center;
   background-color: #fff;
+  height: -webkit-fill-available;
+}
+#portfolio .portfolio-item {
+  height: 325px;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
   font-size: 1.5rem;
@@ -10311,6 +10315,7 @@ header.masthead .masthead-heading {
   border: 7px solid #e9ecef;
   border-radius: 100%;
   padding: 20px;
+  background: #fff;
 }
 .timeline > li .timeline-image h4 {
   font-size: 10px;
@@ -10425,6 +10430,7 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
+  object-fit: cover;
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
