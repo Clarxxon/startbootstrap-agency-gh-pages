@@ -164,7 +164,7 @@ a {
   background-color: transparent;
 }
 a:hover {
-  color: #e6b301;
+ 
   text-decoration: underline;
 }
 
@@ -2440,16 +2440,15 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #e63946;
   border-color: #e63946;
+  font-style: normal;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #fec810;
-  border-color: #fec503;
+
   box-shadow: 0 0 0 0.2rem rgba(254, 216, 84, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
@@ -2882,7 +2881,7 @@ fieldset:disabled a.btn {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #e6b301;
+ 
   text-decoration: underline;
 }
 .btn-link:focus, .btn-link.focus {
@@ -4582,7 +4581,7 @@ input[type=button].btn-block {
 }
 .page-link:hover {
   z-index: 2;
-  color: #e6b301;
+ 
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -9788,9 +9787,7 @@ button.bg-dark:focus {
   color: #e63946 !important;
 }
 
-a.text-primary:hover, a.text-primary:focus {
-  color: #e6b301 !important;
-}
+
 
 .text-secondary {
   color: #6c757d !important;
@@ -9820,9 +9817,7 @@ a.text-info:hover, a.text-info:focus {
   color: #e63946 !important;
 }
 
-a.text-warning:hover, a.text-warning:focus {
-  color: #e6b301 !important;
-}
+
 
 .text-danger {
   color: #dc3545 !important;
@@ -10058,7 +10053,7 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  background-color: #457b9d;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
@@ -10077,7 +10072,12 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 1.5rem;
+  height: 1rem;
+  margin-top: -4px;
+}
+#mainNav .navbar-brand img {
+  margin-top: -4px;
+  height: 1rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10086,7 +10086,7 @@ img::-moz-selection {
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #e63946;
+  color: #a8dadc;
 }
 
 @media (min-width: 992px) {
@@ -10094,7 +10094,7 @@ img::-moz-selection {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: #457b9d;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -10102,20 +10102,22 @@ img::-moz-selection {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 2rem;
+    margin-top: -4px;
+    height: 1rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #457b9d;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 1.5rem;
+  margin-top: -4px;
+    height: 1rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -10130,7 +10132,7 @@ header.masthead {
   text-align: center;
   color: #fff;
   background-color: #1d3557;
-  background-image: url("../assets/blue-gradient-squares-wallpaper-3554x1999-17232_53.jpg");
+  background-image: url("../assets/img/banner.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10161,12 +10163,16 @@ header.masthead .masthead-heading {
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
+    text-align: left;
+    max-width: 700px;
   }
   header.masthead .masthead-heading {
-    font-size: 3.5rem;
+    font-size: 3.1rem;
     font-weight: 700;
     line-height: 3.5rem;
     margin-bottom: 4rem;
+    text-align: left;
+    max-width: 700px;
   }
 }
 #portfolio .portfolio-item {
@@ -10431,8 +10437,8 @@ header.masthead .masthead-heading {
 }
 .team-member img {
   object-fit: cover;
-  width: 14rem;
-  height: 14rem;
+  width: 10rem;
+  height: 10rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 .team-member h4 {
@@ -10508,3 +10514,8 @@ section#contact form#contactForm :-ms-input-placeholder {
 body ul{
   text-align: left;
 }
+
+body p{
+   padding: 16px;
+}
+
